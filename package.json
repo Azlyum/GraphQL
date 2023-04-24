@@ -1,0 +1,35 @@
+{
+  "name": "apollo-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec ./node_modules/.bin/babel-node index.js",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:json": "json-server --watch db.json"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.3"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^0.13.0",
+    "apollo-server": "^2.24.0",
+    "apollo-server-express": "^3.12.0",
+    "axios": "^1.3.6",
+    "body-parser": "^1.18.3",
+    "dotenv": "^9.0.2",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-import": "^1.0.2",
+    "graphql-tools": "^4.0.8",
+    "json-server": "^0.14.0",
+    "lowdb": "^1.0.0",
+    "mongoose": "^7.0.4",
+    "shortid": "^2.2.15"
+  }
+}
