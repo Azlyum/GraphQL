@@ -1,8 +1,7 @@
-const { ApolloServer } = require("apollo-server-express");
-const { typeDefs } = require("./shema/TypeDefs");
-const { resolvers } = require("./shema/Resolvers");
-const express = require("express");
-
+import { ApolloServer } from "apollo-server-express";
+import { typeDefs } from "./shema/TypeDefs";
+import { resolvers } from "./shema/Resolvers";
+import express from "express";
 import RickAndMortyAPI from "./datasources/RickAndMorty";
 import FavouriteCharacter from "./datasources/FavouriteCharacter";
 
